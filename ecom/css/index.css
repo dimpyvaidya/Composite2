@@ -1,0 +1,283 @@
+.logo {
+    width: 50%;
+    float: left;
+}
+
+.header-top {
+    padding: 10px 0;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.searchbox input[type="search"] {
+    padding: 10px;
+    font-size: 1em;
+    color: #999;
+    outline: none;
+    border: 1px solid #cccccc;
+    background: none;
+    float: left;
+    width: 66.66666667%;
+}
+
+.structure {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
+}
+
+.searcharea {
+    float: left;
+    width: 66.66666667%;
+}
+
+.searchbtn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.header-bottom {
+    background: #f8f8f8;
+    padding: 10px 0;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar-toggle:focus {
+    outline: 0;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+footer,
+header,
+main,
+menu,
+nav,
+{
+    display: block;
+}
+
+.navbar-nav {
+    margin: 7.5px -15px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.filter_portion {
+    float: left;
+    width: 33.33333333%;
+}
+
+.left_filter_portion {
+    width: 80%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.ecommerce_color ul li a,
+.ecommerce_type ul li a {
+    font-size: .95em;
+    color: #212121;
+    text-decoration: none;
+}
+
+.ecommerce_color ul li a i {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 1em;
+    border-radius: 20px;
+    background: red;
+}
+
+.ecommerce_color ul li,
+.ecommerce_type ul li {
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+
+.ecommerce_color ul li:nth-child(2) a i {
+    background: brown;
+}
+
+.ecommerce_color ul li:nth-child(3) a i {
+    background: #ffd400;
+}
+
+.ecommerce_color ul li:nth-child(4) a i {
+    background: #d382ee;
+}
+
+.ecommerce_color ul li:nth-child(5) a i {
+    background: #ff5e00;
+}
+
+.ecommerce_color ul li:nth-child(6) a i {
+    background: #0000ff;
+}
+
+.starimg {
+    width: 6%;
+}
+
+.content {
+    padding: 40px 0;
+}
+
+.product_block {
+    width: 60%;
+    float: none;
+    margin: 0 auto;
+}
+
+.all_product_block {
+    width: 100%;
+    float: left;
+}
+
+.product-img {
+    position: relative;
+    box-shadow: 0 0 1px #bbb;
+    padding: 10px;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+    float: right;
+}
+
+.pagination>li {
+    display: inline;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.copy-right {
+    margin-top: 2em;
+    text-align: center;
+}
+
+
+/*For tablet view*/
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    .header {
+        float: left;
+        width: 50%;
+    }
+    .searchbox {
+        width: 60%;
+        float: left;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+    .structure {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.5em;
+    }
+    .filter_grid_left {
+        width: 80%;
+        float: left;
+        margin-bottom: 30px;
+    }
+    .filter_grid {
+        width: 33.33333333%;
+    }
+}
+
+
+/*Desktop version*/
+
+@media screen and (min-width: 1025px) {
+    .structure {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.5em;
+    }
+}
